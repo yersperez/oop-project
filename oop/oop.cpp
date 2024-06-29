@@ -70,6 +70,16 @@ public:
     }
 };
 
+// Function to test polymorphism
+
+void testPolymorphism(AbstractPrinter& printer) 
+{
+    printer.setDocumentName("PolyDoc");
+    cout << printer.printDocument() << endl;
+    cout << printer.scanDocument() << endl;
+    cout << printer.selectPrinter() << endl;
+}
+
 void runTests() {
     {
         InkSlinger printer;
